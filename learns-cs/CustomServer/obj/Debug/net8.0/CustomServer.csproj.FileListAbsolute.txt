@@ -1,0 +1,5 @@
+C:\Users\kmedr\OneDrive\Desktop\learns-backend\learns-cs\CustomServer\obj\Debug\net8.0\CustomServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kmedr\OneDrive\Desktop\learns-backend\learns-cs\CustomServer\obj\Debug\net8.0\CustomServer.AssemblyInfoInputs.cache
+C:\Users\kmedr\OneDrive\Desktop\learns-backend\learns-cs\CustomServer\obj\Debug\net8.0\CustomServer.AssemblyInfo.cs
+C:\Users\kmedr\OneDrive\Desktop\learns-backend\learns-cs\CustomServer\obj\Debug\net8.0\CustomServer.csproj.CoreCompileInputs.cache
+C:\Users\kmedr\OneDrive\Desktop\learns-backend\learns-cs\CustomServer\obj\Debug\net8.0\CustomServer.sourcelink.json

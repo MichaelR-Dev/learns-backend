@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "As7aVR4Vnc/q0uQfLKyl/8M3yFJ705eR+HVrfDdWBQ36zcnMRY9afAJYsrMKWZlKgYfX/uI6nIkD83+pSuG8tg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kmedr\\OneDrive\\Desktop\\learns-backend\\learns-cs\\CustomServer\\Client\\Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kmedr\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.22621.31\\microsoft.windows.sdk.net.ref.10.0.22621.31.nupkg.sha512"
+  ],
+  "logs": []
+}

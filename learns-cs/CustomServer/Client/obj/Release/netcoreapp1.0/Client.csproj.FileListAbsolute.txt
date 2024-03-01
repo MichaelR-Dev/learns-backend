@@ -1,0 +1,6 @@
+C:\Users\kmedr\OneDrive\Desktop\learns-backend\learns-cs\CustomServer\Client\obj\Release\netcoreapp1.0\Client.csproj.AssemblyReference.cache
+C:\Users\kmedr\OneDrive\Desktop\learns-backend\learns-cs\CustomServer\Client\obj\Release\netcoreapp1.0\Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kmedr\OneDrive\Desktop\learns-backend\learns-cs\CustomServer\Client\obj\Release\netcoreapp1.0\Client.AssemblyInfoInputs.cache
+C:\Users\kmedr\OneDrive\Desktop\learns-backend\learns-cs\CustomServer\Client\obj\Release\netcoreapp1.0\Client.AssemblyInfo.cs
+C:\Users\kmedr\OneDrive\Desktop\learns-backend\learns-cs\CustomServer\Client\obj\Release\netcoreapp1.0\Client.csproj.CoreCompileInputs.cache
+C:\Users\kmedr\OneDrive\Desktop\learns-backend\learns-cs\CustomServer\Client\obj\Release\netcoreapp1.0\Client.sourcelink.json
