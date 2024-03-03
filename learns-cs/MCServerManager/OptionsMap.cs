@@ -1,5 +1,12 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
+using System.IO;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Sockets;
+using System.Runtime.Remoting.Messaging;
+using System.Text;
+using System.Threading;
 
 namespace MCServerManager
 {
@@ -9,7 +16,7 @@ namespace MCServerManager
 
         public static string PromptStringConfirmable(string prompt)
         {
-            string confirm = "n";
+            string confirm;
             string prompt_answer;
 
             do
@@ -81,15 +88,12 @@ namespace MCServerManager
         public static int PromptIntConfirmable(string prompt, Action prompt_action = null)
         {
 
-            string confirm = "n";
+            string confirm = "";
             int prompt_answer;
 
             do
             {
-                if(prompt_action != null)
-                {
-                    prompt_action();
-                }
+                prompt_action?.Invoke();
 
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine(prompt);
@@ -101,7 +105,7 @@ namespace MCServerManager
                     Console.WriteLine("\nConfirm Answer: [y] or [n]");
                     Console.ResetColor();
 
-                    confirm = Console.ReadLine();
+                    confirm = Console.ReadLine() ?? "";
 
                     Console.Clear();
 
@@ -261,9 +265,12 @@ namespace MCServerManager
 
         public static Action Option_ManageServer = () =>
         {
+
             if(ServerManager.currentServerSelected != null)
             {
-                MenuManager.manageServerMenu.AccessMenu();
+                ServerManager.OpenServerConsole(ref ServerManager.currentServerSelected);
+                PromptEnterKeyContinue(false);
+                Console.Clear();
             }
             else
             {
@@ -286,9 +293,9 @@ namespace MCServerManager
             string server_description = PromptStringConfirmable("Enter server description:");
             string server_ip = PromptIPConfirmable("Enter server ip:");
             int server_port = PromptPortConfirmable("Enter server port:");
-            int rcon_port = PromptPortConfirmable("Enter server rcon port:");
+            int m_port = PromptPortConfirmable("Enter server Mport:");
 
-            new Server(server_name, server_description, server_ip, server_port, rcon_port);
+            new Server(server_name, server_description, server_ip, server_port, m_port);
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Server Added Successfully");
@@ -306,9 +313,9 @@ namespace MCServerManager
             string server_description = PromptStringConfirmable("Enter server description:");
             string server_ip = PromptIPConfirmable("Enter server ip:");
             int server_port = PromptPortConfirmable("Enter server port:");
-            int rcon_port = PromptPortConfirmable("Enter server rcon port:");
+            int m_port = PromptPortConfirmable("Enter server rcon port:");
 
-            new Server(server_name, server_description, server_ip, server_port, rcon_port);
+            new Server(server_name, server_description, server_ip, server_port, m_port);
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Server Created Successfully");

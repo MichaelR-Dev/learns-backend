@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "i2ei7d9N9eV5oqg4iwSTD0bhPqP7hYrZmKFarbH3uR7hpnzvt1JAuTEzah0/6XAn833Gwaf2mPpYulqUOElFJg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kmedr\\OneDrive\\Desktop\\learns-backend\\learns-cs\\MCServerManager\\MCManagerServer\\MCManagerServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kmedr\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
